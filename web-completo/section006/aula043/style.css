@@ -24,3 +24,8 @@ a {
 footer {
     text-align: center;
 }
+
+h1 {
+    color: rgb(95, 138, 102);
+    font-size: 1.1rem;
+}
