@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas Estilizadas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            width: 600px;
+            border-collapse: collapse;
+        }
+
+        td, th {
+            border: 1px solid black;
+            padding: 5px;
+            text-align: left;
+        }
+
+        th {
+            letter-spacing: 0.1em;
+        }  
+
+        tr:nth-child(even) {
+            background-color: #ececec;
+        }
+
+        .right {
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <h1>Estilizando Tabelas</h1>
+    <table>
+        <tr>
+            <th>CÓDIGO</th>
+            <th>PRODUTO</th>
+            <th class="right">PREÇO</th>
+        </tr>
+        <tr>
+            <td>001</td>
+            <td>Notebook</td>
+            <td class="right">R$ 2.500</td>
+        </tr>
+        <tr>
+            <td>002</td>
+            <td>Tablet</td>
+            <td class="right">R$ 1.500</td>
+        </tr>
+        <tr>
+            <td>003</td>
+            <td>iPhone</td>
+            <td class="right">R$ 3.500</td>
+        </tr>
+        <tr>
+            <td>004</td>
+            <td>Nexus</td>
+            <td class="right">R$ 3.500</td>
+        </tr>
+    </table>
+</body>
+</html>
