@@ -79,21 +79,46 @@ body.fotos ul.navegation a#fotos {
     width: 270px;
     float: left;
     margin: 0 0 20px 195px;
-    background-color: blue;
+}
+
+#duas-col #primario {
+    width: 555px;
+}
+
+#uma-col #primario {
+    width: 750px;
+    margin: 0 0 20px 0px;
 }
 
 #secundario{
     width: 270px;
     float: left;
     margin: 0 0 20px 15px;
-    background-color: green;
 }
 
 #lateral {
     width: 180px;
     float: left;
-    background-color: yellow;
     margin: 0 0 20px -750px;
+}
+
+.box {
+    margin: 10px 0;
+    background-color: #f3f3f3;
+    padding: 5px 0;
+}
+
+h2 {
+    font-size: 1em;
+    background-color: #294c71;
+    color: white;
+    padding: 5px;
+}
+
+.box-conteudo {
+    background-color: white;
+    padding: 5px;
+    margin-top: 5px;
 }
 
 footer {
