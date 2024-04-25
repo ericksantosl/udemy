@@ -155,6 +155,28 @@ input.submit {
     margin-top: 15px;
 }
 
+img.imagem-principal {
+    width: 98%;
+    border: 3px solid #dfdfdf;
+}
+
+h3 {
+   display: inline;
+   text-transform: uppercase;
+   font-size: 0.8em;
+   padding: 3px;
+}
+
+.destaque h3 {
+    background-color: #b10333;
+    color: white;
+}
+
+.entrevista h3 {
+    background-color: #123050;
+    color: white;
+}
+
 footer {
     background-color: #294c71;
     padding: 20px;
