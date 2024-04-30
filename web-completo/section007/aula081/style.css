@@ -134,3 +134,48 @@ ul#navegacao a:hover {
     margin: 0 auto;
     width: 90%;
 }
+
+h2 {
+    color: #7d7640;
+    font-size: 1.1em;
+    padding: 5px 0;
+}
+
+p {
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+
+#beneficios li {
+    padding: 8px;
+    border-bottom: 1px solid #f3efcb;
+    height: 6em;
+}
+
+#beneficios li a img {
+    float: left;
+    margin-right: 8px;
+}
+
+#beneficios li a p {
+    font-size: 0.9em;
+    color: black;
+}
+
+#beneficios li a h3 {
+    font-size: 1.1em;
+    color: #6e672c;
+    padding: 5px 0;
+    background: url(imagens/ornamento.png) no-repeat center right;
+}
+
+#beneficios li:hover {
+    background-color: #f6f3d6;
+    cursor: pointer;
+}
+
+#rodape {
+    padding: 16px;
+    background: white url(imagens/bg-rodape.png) repeat-x top;
+    color: #7d7640;
+}
