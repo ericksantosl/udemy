@@ -1,5 +1,6 @@
 html, body, #home {
     height: 100vh;
+    overflow-x: hidden;
 }
 
 body {
@@ -14,6 +15,7 @@ body {
 @media (max-width: 575.98px) {
     .btn-custom {
         margin: 10px 15px;
+        font-size: 1em;
     }
 }
 
@@ -77,10 +79,22 @@ body {
 }
 
 h1 {
-  font-weight: bold;
-  letter-spacing: -0.05em;
-  margin-bottom: 50px;
-  color: white;
+    font-weight: 900;
+    letter-spacing: -0.04em;
+    margin-bottom: 50px;
+    color: white;
+}
+
+h2 {
+    font-size: 3em;
+    font-weight: 700;
+    letter-spacing: -0.04em;
+}
+
+h3 {
+    font-size: 2em;
+    font-weight: 700;
+    letter-spacing: -0.04em;
 }
 
 .btn-custom {
@@ -107,4 +121,72 @@ h1 {
 .btn-branco:hover {
     background-color: white;
     color: black;
+}
+
+#servicos {
+    background: white;
+}
+
+#servicos h2, h3 {
+    color: #7c25f8;
+}
+
+.albuns {
+    padding: 10px 0;
+}
+
+#recursos {
+    color: white;
+}
+
+#recursos h3 {
+    color: #9df0e1;
+}
+
+#recursos h2 {
+    color: white;
+}
+
+.rotacion {
+    transform: rotate(30deg);
+    padding-left: 80px;
+}
+
+.caixa {
+    padding: 20px 0;
+}
+
+footer {
+    background-color: black;
+    padding: 50px 0 20px 0;
+    position: relative;
+}
+
+footer h4 {
+    color: #919496;
+    font-size: 0.8em;
+}
+
+footer .navbar-nav a {
+    color: white;
+    font-size: 0.8em;
+    text-decoration: none;
+}
+
+footer .navbar-nav a:hover {
+    color: #9bf0e1;
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer ul li {
+    float: right;
+    margin: 0 10px;
+}
+
+footer ul li i {
+    font-size: 3em;
+    color: rgb(182, 182, 182);
 }
