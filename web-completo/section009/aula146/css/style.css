@@ -190,3 +190,7 @@ footer ul li i {
     font-size: 3em;
     color: rgb(182, 182, 182);
 }
+
+.carousel-control-next, .carousel-control-prev {
+    width: 5%;
+}
