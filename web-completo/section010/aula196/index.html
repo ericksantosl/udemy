@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function acaoAzul() {
+            alert('clicou no azul')
+        }
+
+        function acaoVerm() {
+            alert('clicou no vermelho')
+        }
+
+        function acaoAmar() {
+            alert('clicou no amarelo')
+        }
+    </script>
+
+    <style>
+        body, html {
+            height: 100vh;
+            width: 100vw;
+        }
+
+        #all {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="all">
+        <div onclick="acaoAzul()" style="background-color: blue; width: 150px; height: 150px;"></div>
+        <div onclick="acaoVerm()" style="background-color: red; width: 150px; height: 150px;"></div>
+        <div onclick="acaoAmar()" style="background-color: yellow; width: 150px; height: 150px;"></div>
+    </div>
+</body>
+</html>
