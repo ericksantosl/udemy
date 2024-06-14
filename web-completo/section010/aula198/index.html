@@ -4,14 +4,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DOM</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 2em;
+        }
+
+        input {
+            width: 400px;
+            height: 40px;
+        }
+    </style>
 </head>
 <body>
-    <input type="text" placeholder="Digite seu nome" id="nome" class="campo" name="nome">
+    <input type="text" id="carac" placeholder="Digite seu nome" onkeyup="carac()">
+    <hr>
+    <label for="letras">Letras:</label>
+    <input type="text" id="letras" disabled="disabled">
+
+    <label for="numeros">Números:</label>
+    <input type="text" id="numeros" disabled="disabled">
 
 
 
     <script>
-        console.log(document.getElementsByName('nome'))
+        function carac() {
+            let carac = (document.getElementById('carac')).value
+
+            document.getElementById('carac').value = ''
+
+            console.log(carac)
+
+            switch (carac) {
+                case '0':
+                case '1':
+                case '2':
+                case '3':
+                case '4':
+                case '5':
+                case '6':
+                case '7':
+                case '8':
+                case '9':
+                    document.getElementById('numeros').value += carac
+                    break;
+            
+                default:
+                    document.getElementById('letras').value += carac
+                    break;
+            }
+        }
     </script>
 </body>
 </html>
