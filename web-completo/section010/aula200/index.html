@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            text-align: center;
+        }
+
+        button {
+            height: 60px;
+            width: 300px;
+            margin: 10px;
+        }
+
+        div {
+            width: 300px;
+            height: 300px;
+            margin: 50px auto;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <button type="button" onclick="mudarFundo('#ff0000')">VERMELHO</button>
+    <button type="button" onclick="mudarFundo('#00ff00')">VERDE</button>
+    <button type="button" onclick="mudarFundo('#0000ff')">AZUL</button>
+
+    <hr>
+
+    <div id="div"></div>
+
+    <script>
+        function mudarFundo(cor) {
+            document.getElementById('div').style.backgroundColor = cor
+        }
+    </script>
+</body>
+</html>
