@@ -8,9 +8,18 @@
     <script src="js/script.js"></script>
 </head>
 <body onresize="ajustarTamanho()">
-    <script>
-        posicaoRandom()
+    <div class="painel">
+        <div class="vidas">
+            <img src="imgs/coracao_vazio.png">
+            <img src="imgs/coracao_cheio.png">
+            <img src="imgs/coracao_cheio.png">
+        </div>
+        <div class="cronometro">
+            Tempo restante?
+        </div>
+    </div>
 
+    <script>
         setInterval(function () {
             posicaoRandom()
         }, 1000)

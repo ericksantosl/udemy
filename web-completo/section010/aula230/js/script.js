@@ -16,8 +16,8 @@ function posicaoRandom() {
         document.getElementById('mosquito').remove()
     }
 
-    let posX = Math.floor(Math.random() * lar) - 120
-    let posY = Math.floor(Math.random() * alt) - 120
+    let posX = Math.floor(Math.random() * lar) - 150
+    let posY = Math.floor(Math.random() * alt) - 150
 
     posX = posX < 0 ? 0 : posX
     posY = posY < 0 ? 0 : posY
