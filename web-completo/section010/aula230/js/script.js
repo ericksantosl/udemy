@@ -11,20 +11,27 @@ function ajustarTamanho() {
 ajustarTamanho()
 
 function posicaoRandom() {
-    let posX = Math.floor(Math.random() * lar) - 90
-    let posY = Math.floor(Math.random() * alt) - 90
+    //remover o mosquito anterior (caso exista)
+    if (document.getElementById('mosquito')) {
+        document.getElementById('mosquito').remove()
+    }
+
+    let posX = Math.floor(Math.random() * lar) - 120
+    let posY = Math.floor(Math.random() * alt) - 120
 
     posX = posX < 0 ? 0 : posX
     posY = posY < 0 ? 0 : posY
 
     console.log(posX, posY)
 
+    //criando o elemento no html
     let mosquito = document.createElement('img')
     mosquito.src = 'imgs/mosquito.png'
     mosquito.className = tamanhoRandom() + ' ' + ladoAleatorio()
     mosquito.style.left = posX + 'px'
     mosquito.style.top = posY + 'px'
     mosquito.style.position = 'absolute'
+    mosquito.id = 'mosquito'
 
     document.body.appendChild(mosquito)
 }
