@@ -1,5 +1,6 @@
 let alt
 let lar
+let vidas = 1
 
 function ajustarTamanho() {
     alt = window.innerHeight
@@ -14,6 +15,14 @@ function posicaoRandom() {
     //remover o mosquito anterior (caso exista)
     if (document.getElementById('mosquito')) {
         document.getElementById('mosquito').remove()
+
+        if (vidas > 3) {
+            alert('GAME OVER')
+            vidas = 1
+        } else {
+            document.getElementById('v' + vidas).src = "imgs/coracao_vazio.png"
+            vidas++
+        }
     }
 
     let posX = Math.floor(Math.random() * lar) - 150
@@ -32,6 +41,9 @@ function posicaoRandom() {
     mosquito.style.top = posY + 'px'
     mosquito.style.position = 'absolute'
     mosquito.id = 'mosquito'
+    mosquito.onclick = function () {
+        this.remove()
+    }
 
     document.body.appendChild(mosquito)
 }
