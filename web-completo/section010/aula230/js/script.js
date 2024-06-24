@@ -1,6 +1,7 @@
 let alt
 let lar
 let vidas = 1
+let tempo = 15
 
 function ajustarTamanho() {
     alt = window.innerHeight
@@ -10,6 +11,17 @@ function ajustarTamanho() {
 }
 
 ajustarTamanho()
+
+let cronometro = setInterval(() => {
+    tempo--
+    if (condition) {
+        clearInterval(cronometro)
+        clearInterval(criaMosquito)
+        window.location.href = 'win.html'
+    } else {
+        document.getElementById('cronometro').innerHTML = tempo
+    }
+}, 1000);
 
 function posicaoRandom() {
     //remover o mosquito anterior (caso exista)
