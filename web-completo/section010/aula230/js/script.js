@@ -14,7 +14,7 @@ ajustarTamanho()
 
 let cronometro = setInterval(() => {
     tempo--
-    if (condition) {
+    if (tempo < 0) {
         clearInterval(cronometro)
         clearInterval(criaMosquito)
         window.location.href = 'win.html'
