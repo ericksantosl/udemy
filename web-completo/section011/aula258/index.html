@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        class Cadeira {
+            constructor() {
+                this.qtdePernas = 4
+                this.giratoria = true
+                this.cor = 'Azul'
+            }
+
+            girarCadeira() {
+                if (this.giratoria === true) {
+                    console.log('Giroooooou!')
+                } else {
+                    console.log('Cadeira não é giratória!')
+                }
+            }
+        }
+
+        let x = new Cadeira()
+        x.girarCadeira()
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
