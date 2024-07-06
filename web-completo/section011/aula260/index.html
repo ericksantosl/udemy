@@ -10,6 +10,7 @@
             constructor() {
                 this.cor = ''
                 this.tamanho = null
+                this.peso = null
             }
 
             dormir() {
@@ -44,8 +45,11 @@
             }
         }
 
-        class Papagaio {
-
+        class Papagaio extends Passaro {
+            constructor() {
+                super()
+                this.fala = true
+            }
         }
     </script>
 </head>
