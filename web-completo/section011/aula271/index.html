@@ -24,8 +24,22 @@
 
         let a2 = new AviaoF()
 
-        a2.levantarVoo()
+        class AviaoC {
+            constructor() {
+                this.cor = 'Vermelho'
+                this.modelo = 'Embraer E-Jets'
+            }
 
+            levantarVoo() {
+                console.log('Levantar Voo')
+            }
+        }
+
+        let a3 = new AviaoC()
+
+        console.log(a1)
+        console.log(a2)
+        console.log(a3)
     </script>
 </head>
 <body>
