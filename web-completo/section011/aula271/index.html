@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        
+        let a1 = {
+            cor: 'branco',
+            modelo: 'Airbus A380',
+            levantarVoo: function() {
+                console.log('Levantar Voo')
+            }
+        }
+
+        let AviaoF = function() {
+            this.cor = 'Azul',
+            this.modelo = 'Boeing 787', 
+            this.levantarVoo = function() {
+                console.log('Levantar Voo')
+            }
+        }
+
+        let a2 = new AviaoF()
+
+        a2.levantarVoo()
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
