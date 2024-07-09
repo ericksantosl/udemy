@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        let obj = {
+            a: 10,
+            b: 20,
+            c: 30,
+            d: 40
+        }
+
+        function teste({a, b, c, z = 50}) {
+            console.log(a, b, c, z)
+        }
+
+        teste(obj)
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
