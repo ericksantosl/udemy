@@ -1,9 +1,20 @@
 <?php
-    print_r($_POST);
+    $usuarios_autenticado = false;
 
-    echo '<br>';
+    $usuarios_app = [
+        ['email' => 'adm@teste.com.br', 'senha' => '123456'],
+        ['email' => 'user@teste.com.br', 'senha' => 'abcd']
+    ];
 
-    echo $_POST['email'];
-    echo '<br>';
-    echo $_POST['senha'];
+    foreach($usuarios_app as $user) {
+        if ($user['email'] == $_POST['email'] && $user['senha'] == $_POST['senha']) {
+            $usuarios_autenticado = true;
+        }
+    };
+
+    if ($usuarios_autenticado) {
+        echo 'Usuário liberado';
+    } else {
+        header('Location: index.php?login=erro');
+    }
 ?>
