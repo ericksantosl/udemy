@@ -18,6 +18,7 @@
     if ($usuarios_autenticado) {
         echo 'Usuário liberado';
         $_SESSION['autenticado'] = 'SIM';
+        header('Location: home.php');
     } else {
         header('Location: index.php?login=erro');
         $_SESSION['autenticado'] = 'NAO';
