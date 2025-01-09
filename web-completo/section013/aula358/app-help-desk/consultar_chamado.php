@@ -8,7 +8,7 @@
   $chamados = [];
 
   //abrir o arquivo.hd
-  $arquivo = fopen('arquivo.hd', 'r');
+  $arquivo = fopen('../../app-help-desk/arquivo.hd', 'r');
 
   //enquanto houver registros (linhas) a serem recuperados
   while (!feof($arquivo)) { //testa até o fim do arquivo
@@ -67,7 +67,7 @@
                 $chamado_dados = explode('#', $chamado);
 
                 if ($_SESSION['perfil_id'] == 2) {
-                  //só vamos se foi criado pelo usuário
+                  //só vamos exibir se foi criado pelo usuário
                   if ($_SESSION['id'] != $chamado_dados[0]) {
                     continue;
                   }
